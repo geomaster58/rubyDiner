@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Html Forms</title>
+		</head>
+		<body>
+    <form action="contact_form.php" method="get" oninput="invoice.value=parseInt(total.value)+parseInt(shipping.value)">
+    	<label for="name">Name:</label>
+    	 <input type="text" name="name" placeholder="Jon snow etc" required>
+    	 <br>
+    	<label for="email">Email:</label> 
+    	<input type="text" name="email" placeholder="you@email.com" required>
+    	<br>
+    	<label for="message">Message:</label><br>
+    	<textarea name="message" rows="15" cols="100"></textarea><br>
+    	<hr>
+        <label for="source"> How did you hear about us?</label>
+        <select name="source" multiple="true">
+            <option value="google"> Google</option>
+              <option value="yahoo"> Yahoo</option>
+                <option value="safari"> Safari</option>
+        </select>
+        <hr>
+        <label for="shipping_method">Shipping Method</label>
+        <select name="shipping_method" >
+           <optgroup label="business">
+               <option value="biz_overnight">Overnight</option>
+               <option value="biz_ground">Ground</option>
+           </optgroup>
+            <optgroup label="residential">
+               <option value="res_overnight">Overnight</option>
+               <option value="res_ground">Ground</option>
+           </optgroup>
+        </select>
+
+
+        <hr>
+    	<label for="options">Packing requirements! Select all the apply</label><br>
+    	<input type="checkbox" name="options" value="premium"> Premium <br>
+    	<input type="checkbox" name="options" value="automated"> Automated <br>
+    	<input type="checkbox" name="options" value="rush"> Rush <br>
+    	<hr>
+      <input type="submit" value="Send contact information">
+
+      <hr>
+      <label for="delivery">Shipping Preferences!</label><br>
+      <input type="radio" name="delivery" value="in_store"> In Store <br>
+      <input type="radio" name="delivery" value="shipped"> Shipped <br>
+    <hr>
+
+    <label for="total">Subtotal</label><br>
+    <input type="text" name="total" value="0"><br>
+    <label for="shipping">Shipping</label><br>
+    <input type="text" name="shipping" value="9"><br>
+    Total for invoice: $<output name="invoice" for="total tax"></output>
+    </form>
+  </body>
+
+	</html>

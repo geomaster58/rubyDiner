@@ -1,0 +1,2 @@
+module ThumbImagesHelper
+end

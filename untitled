@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+
+
+		<div>
+			<ol style='list-style-type: square;'>
+				<li><mark>this</mark></li>
+				<li><small>is</small></li>
+				<li><b>a</b></li>
+				<li><em>list</em></li>
+				<li><del>KKKKK</del></li>
+				<li><ins>The</ins></li>
+				<li>great<sub>ness</sub></li>
+				<li>great<sup>hot</sup></li>
+				<li><pre>for()</pre></li>
+				<li><q>list</q></li>
+			</ol>
+		</div>
+		<div>
+		
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Mount_Kilimanjaro_Dec_2009_edit1.jpg" width="100%" alt="Kilimanjaro" usemap="#ducklinks" />
+
+		<map name="ducklinks">
+			<area shape="circle" coords="0,0,10,10" href="https://google.com">
+
+
+		</map>
+
+
+
+
+
+		</div>
+
+
+
+
+	</html>

@@ -1,0 +1,2 @@
+class NoStyle < ApplicationRecord
+end

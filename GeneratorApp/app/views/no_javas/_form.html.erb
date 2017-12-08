@@ -1,0 +1,27 @@
+<%= form_with(model: no_java, local: true) do |form| %>
+  <% if no_java.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(no_java.errors.count, "error") %> prohibited this no_java from being saved:</h2>
+
+      <ul>
+      <% no_java.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :no_java_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :no_java_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

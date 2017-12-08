@@ -1,0 +1,2 @@
+class Coolio < ApplicationRecord
+end

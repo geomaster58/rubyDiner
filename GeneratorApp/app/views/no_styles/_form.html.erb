@@ -1,0 +1,27 @@
+<%= form_with(model: no_style, local: true) do |form| %>
+  <% if no_style.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(no_style.errors.count, "error") %> prohibited this no_style from being saved:</h2>
+
+      <ul>
+      <% no_style.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :no_style_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :no_style_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

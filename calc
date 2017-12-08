@@ -1,0 +1,20 @@
+class Calculator
+  def initialize
+    puts "Please enter an expression:"
+    string = gets.chomp
+    begin
+      p evaluate string
+    rescue ZeroDivisionError
+      puts "You cant divide by zero!!"
+    rescue NameError
+      puts "You must enter numbers and operators! No letters"  
+    end  
+  end
+
+  def evaluate(string)
+    instance_eval string
+  end
+end
+
+Calculator.new
+

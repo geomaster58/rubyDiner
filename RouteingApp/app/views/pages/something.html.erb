@@ -1,0 +1,23 @@
+<h1>Enter each number and operator followed by a slash.</h1>
+
+<%= @something %>
+<%= @another_one %>
+<%= @yet_another %>
+
+
+<%= def calculator first, second, third 
+  case second 
+  when "+","add","combine" then  first+third 
+  when "-","subtract" then  first-third 
+  when "*","multiply","times" then  first*third 
+  when "/","divide","division" then  first/third 
+  when "%","modulus" then  first%third 
+  when "**","^","exponent" then first**third 
+  else p "operation not found!!" 
+  end 
+
+  end %>
+
+ <h2><%=  calculator(@something.to_f, @another_one, @yet_another.to_f) %></h2>
+
+ 

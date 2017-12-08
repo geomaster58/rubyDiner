@@ -1,0 +1,23 @@
+
+<p id="notice"><%= notice %></p>
+
+<h2>This is my header</h2> 
+
+<hr>
+
+  <div>
+    <% @custom3s.each do |custom3| %>
+      <div class="styles">
+        <p><%= custom3.title %></p>
+        <p><%= custom3.description %></p>
+        <p><%= link_to 'Show', custom3 %></p>
+        <p><%= link_to 'Update', edit_custom3_path(custom3) %></p>
+        <p><%= link_to 'Delete', custom3, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+    <% end %>
+  </div>
+
+
+<hr>
+
+<%= link_to 'Create a new Custom3', new_custom3_path %>

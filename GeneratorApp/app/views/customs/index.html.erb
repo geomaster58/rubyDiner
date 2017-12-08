@@ -1,0 +1,21 @@
+
+<p id="notice"><%= notice %></p>
+
+
+
+  <div>
+    <% @customs.each do |custom| %>
+      <div class="styles">
+        <p><%= custom.title %></p>
+        <p><%= custom.description %></p>
+        <p><%= link_to 'Show', custom %></p>
+        <p><%= link_to 'Create', edit_custom_path(custom) %></p>
+        <p><%= link_to 'Delete', custom, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+    <% end %>
+  </div>
+
+
+<hr>
+
+<%= link_to 'Create a new Custom', new_custom_path %>

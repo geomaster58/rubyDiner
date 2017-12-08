@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @coolio.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @coolio.body %>
+</p>
+
+<p>
+  <strong>Honest:</strong>
+  <%= @coolio.honest %>
+</p>
+
+<p>
+  <strong>Timeofday:</strong>
+  <%= @coolio.timeOfDay %>
+</p>
+
+<%= link_to 'Edit', edit_coolio_path(@coolio) %> |
+<%= link_to 'Back', coolios_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>No Javas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @no_javas.each do |no_java| %>
+      <tr>
+        <td><%= no_java.title %></td>
+        <td><%= no_java.body %></td>
+        <td><%= link_to 'Show', no_java %></td>
+        <td><%= link_to 'Edit', edit_no_java_path(no_java) %></td>
+        <td><%= link_to 'Destroy', no_java, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New No Java', new_no_java_path %>

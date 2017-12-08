@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+		
+			<style>
+				
+			p {
+
+				font-size: 1.5em;
+				padding-left: 42px;
+
+			}
+
+
+			</style>
+		</head>
+		<body>
+			<p>Ampersand: &amp;</p>
+			<p>Copyright: &copy;</p>
+			<p>registered trademark: &reg;</p>
+			<p>&nbsp; &nbsp; My sentence!</p>
+			<p>GreaterThan: &gt;</p>
+			<p>LesserThan: &lt;</p>
+			<p>DoubleQuotes: &quot;</p>
+			<p>SingleQuotes: &apos;</p>
+		</body>
+
+	</html>

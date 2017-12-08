@@ -1,0 +1,2 @@
+class JustStyle < ApplicationRecord
+end

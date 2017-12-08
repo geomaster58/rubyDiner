@@ -1,0 +1,37 @@
+<%= form_with(model: coolio, local: true) do |form| %>
+  <% if coolio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coolio.errors.count, "error") %> prohibited this coolio from being saved:</h2>
+
+      <ul>
+      <% coolio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :coolio_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :coolio_body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :honest %>
+    <%= form.check_box :honest, id: :coolio_honest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :timeOfDay %>
+    <%= form.time_select :timeOfDay, id: :coolio_timeOfDay %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

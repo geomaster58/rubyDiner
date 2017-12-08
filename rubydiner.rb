@@ -30,7 +30,7 @@ def sassysoup
   until answer == true 
 
    answer2 = gets.chomp!.downcase
-   if answer2 == "yes" || answer2 == "fine" || answer2 == "okay" || answer2 == "ill try it"
+   if answer2 == "yes" || answer2 == "fine" || answer2 == "okay" || answer2 == "ill try it" || answer2 == "sure" || answer2 == "probably" || answer2 == "i guess"
      puts "We are all out of soup! "
      answer = true
    else
@@ -62,7 +62,7 @@ randomsug2 = valuelist3.to_a.sample.first.to_s
 puts "Did you want to try our #{randomsug} with #{randomsug1} and #{randomsug2}"
 reply = gets.chomp!
 
-  if reply == 'yes' || reply == 'ya' || reply == 'sure'
+  if reply == 'yes' || reply == 'ya' || reply == 'sure' || reply == "totally" || reply == "grr"
     value = valuelist[randomsug.to_sym]
        
     value2 = valuelist2[randomsug1.to_sym]        
@@ -74,7 +74,7 @@ reply = gets.chomp!
 
   else
 
-    return "nothing"
+    return 0
 
   end
 
@@ -112,7 +112,7 @@ def adding_items entreetime, sidetime, timely, timely2
  valuelist = entreetime[timely]
  random_suggestion = random_sug valuelist, valuelist2, valuelist3
  
- if random_suggestion.is_an_int
+ if random_suggestion.zero?
 
        return   "Okay your total is $#{(random_sug valuelist, valuelist2, valuelist3)}. Itll be out shortly."
  end

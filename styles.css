@@ -1,0 +1,36 @@
+body {
+
+-webkit-animation: myAnimation 5s infinite;
+animation: myAnimation 5s infinite;
+font-family: cursive;
+
+}
+
+@-webkit-keyframes 'myAnimation' {
+
+	50% {
+
+		background-color: yellow;
+	}
+
+}
+
+@keyframes 'myAnimation' {
+
+	50% {
+
+		background-color: yellow;
+	}
+
+}
+
+ol {
+
+font-family: 'Sedgwick Ave Display', cursive;
+background: url(images.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover
+
+
+}

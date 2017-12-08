@@ -1,0 +1,2 @@
+class ThumbImage < ApplicationRecord
+end

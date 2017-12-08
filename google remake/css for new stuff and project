@@ -1,0 +1,53 @@
+h1 {
+
+font-size: 5.5em;
+
+
+}
+
+
+#floatie-boxes, .search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #e8e8e8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2em;
+  border-bottom: 10px, solid green;
+  width: 150px;
+  height: 150px;
+}
+
+
+.g {
+
+color: blue;
+
+}
+#o {
+
+color: red;
+
+}
+
+#l {
+
+	color: green;
+}
+#e {
+
+	color: red;
+}
+#o2 {
+  
+ color: yellow;
+
+}

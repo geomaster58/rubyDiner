@@ -1,0 +1,2 @@
+module NoStylesHelper
+end

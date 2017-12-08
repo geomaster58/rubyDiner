@@ -1,0 +1,27 @@
+<%= form_with(model: custom2, local: true) do |form| %>
+  <% if custom2.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(custom2.errors.count, "error") %> prohibited this custom2 from being saved:</h2>
+
+      <ul>
+      <% custom2.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :custom2_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :custom2_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

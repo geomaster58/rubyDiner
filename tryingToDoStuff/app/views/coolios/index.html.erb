@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coolios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Honest</th>
+      <th>Timeofday</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coolios.each do |coolio| %>
+      <tr>
+        <td><%= coolio.title %></td>
+        <td><%= coolio.body %></td>
+        <td><%= coolio.honest %></td>
+        <td><%= coolio.timeOfDay %></td>
+        <td><%= link_to 'Show', coolio %></td>
+        <td><%= link_to 'Edit', edit_coolio_path(coolio) %></td>
+        <td><%= link_to 'Destroy', coolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coolio', new_coolio_path %>
